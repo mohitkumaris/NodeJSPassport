@@ -1,2 +1,2 @@
 # NodeJSPassport
-Node js Authentication with Passport
+Node js Authentication with Passport JS
