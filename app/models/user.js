@@ -10,14 +10,14 @@ var bcrypt=require("bcrypt-nodejs"); //
 var userSchema=mongoose.Schema({
 
     local: {
-        email:string,
-        password:string
+        email:String,
+        password:String
     },
     facebook:{
-        email:string,
-        id:string,
-        token:string,
-        name:string
+        email:String,
+        id:String,
+        token:String,
+        name:String
     }
 });
 

@@ -40,6 +40,17 @@ module.exports=function (app,passport) {
         res.redirect('/')
     });
 
+    // process for sign up
+
+    app.post('/signup',passport.authenticate('local-signup',{
+        successRedirect:'/profile',
+        failerRedirect:'/signup',
+        failureFlash:true
+
+
+    }))
+
+
     // route middleware to make sure a user is logged in
     function isloggedIn(req,res,next) {
 
